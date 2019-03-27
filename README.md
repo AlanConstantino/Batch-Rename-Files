@@ -30,5 +30,22 @@ This script renames all of the files within a directory to a single name with an
 ```python BatchRenameFiles.py C:/Users/MyPC/Desktop/Folder 0 txt```
 
 -  By specifying the ```0``` as the ```filename``` and ```txt``` as the ```extension```, the line above will keep the current filename and only change the extension to ```txt```
+
+### Running on MacOS/Linux
+- To run on macOS or Linux you'll have the change 6 lines of code (lines 9, 10, 17, 18, 25, and 26).
+
+#### Change the lines to the following
+
+- Line 9 to ```src = path + "/" + filename```
+
+- Line 10 to ```dest = path + "/" + newName + str(count) + oldExtension[1]```
+
+- Line 17 to ```src = path + "/" + filename```
+
+- Line 18 to ```dest = path + "/" + newName + str(count) + "." + newExtension```
+
+- Line 25 to ```src = path + "/" + filename```
+
+- Line 26 to ```dest = path + "/" + oldName[0] + "." + newExtension```
   
 ---
